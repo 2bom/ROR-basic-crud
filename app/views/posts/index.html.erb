@@ -1,1 +1,9 @@
 <h1>Posts#index</h1>
+
+<ul>
+  <h2>POST LIST</h2>
+  <button><a href="/posts/new">new post</a></button>
+  <% @post_list.each do |post| %>
+    <li><%= post.id %>. <a href="/posts/show/<%= post.id %>"><%= post.title %></a></li>
+  <% end %>
+</ul>

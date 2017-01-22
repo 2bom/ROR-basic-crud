@@ -1,1 +1,9 @@
 <h1>Posts#show</h1>
+
+<ul>
+  <li>Title : <%= @detail_post.title %></li>
+  <li>Content : <%= @detail_post.content %></li>
+</ul>
+
+<button><a href="/posts/edit/<%= @detail_post.id %>">edit</a></button>
+<button><a href="/posts/delete/<%= @detail_post.id %>">delete</a></button>
